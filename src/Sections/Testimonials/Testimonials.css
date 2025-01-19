@@ -1,0 +1,68 @@
+#testimonials{
+    overflow: hidden;
+    position: relative;
+    padding: 30px 0;
+}
+
+
+#testimonials .testimonials{
+    margin-top: 50px;
+    padding: 20px 0;
+    position: static;
+    height: 100%;
+}
+
+#testimonials .flex{
+    align-items: center;
+    gap: 10px;
+}
+
+#testimonials .user{
+    margin-top: 30px;
+}
+
+#testimonials .nane{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#testimonials .content{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#testimonials .stars-container{
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+@media (max-width: 767px){
+    #testimonials .testimonials{
+        padding: 20px;
+    }
+
+    #testimonials .stars-container{
+        bottom: 10px;
+        left: 5px;
+    }
+}
+
+@media (max-width: 600px){
+    #testimonials {
+        padding: 50px 20px;
+    }  
+
+    #testimonials  .testimonials{
+        min-width: 100%;
+    }
+
+    #testimonials  .testimonials .row{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        text-align: left;
+    }
+}
+

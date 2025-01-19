@@ -1,0 +1,83 @@
+#about{
+    background-color: var(--color-bg-primary);
+    background-image: url("../../assets/bg-1.svg");
+    background-size: 500px 400px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    overflow: hidden;
+}
+
+#about .section-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#about img{
+    object-fit: contain;
+}
+
+#about .bento-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    background-image: url("../../assets/bg-2.svg");
+    background-repeat: no-repeat;
+}
+
+#about .grid-item .item{
+    min-height: 20px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+#about .grid-item .item:first-child{
+    margin-bottom: 1rem;
+}
+
+#about .achivments{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+#about .achivment{
+    text-align: center;
+    padding: 1rem 10px;
+    border-radius: 1.5rem;
+    transition: var(--transition);
+}
+
+#about .achivment:hover{
+    background-color: rgba(var(--color-primary-rgb), .1);
+}
+
+#about .achivments .achivment .icon{
+    font-size: 20px;
+    color: var(--color-primary);
+}
+
+#about .achivments .achivment .title{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+@media (max-width:900){
+    #about .section-container{
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    #about .bento-grid{
+        max-width: 500px;
+        margin: auto;
+    }
+}
+@media (max-width:400px){
+    #about .grid-item img{
+        display: none;
+    }
+}
+
