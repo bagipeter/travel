@@ -19,6 +19,7 @@ const App = () => {
       <WhyChooseUs />
       <Testimonials />
       <Concatct />
+      {/* Egy utazási iroda honlapját késszítettem el */}
         
     </>
   )
